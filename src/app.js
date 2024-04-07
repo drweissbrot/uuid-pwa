@@ -45,7 +45,7 @@ regenerateUuid()
 // immediately copy and close if we're on a matching URL
 const url = new URL(window.location)
 
-if (url.hostname === 'copy-uuid.brot.phd' || url.hostname === 'copy-guid.brot.phd' || url.hash === '#copy' || url.searchParams.has('copy')) {
+if (url.hostname === 'copy.uuid.brot.phd' || url.hostname === 'copy.guid.brot.phd' || url.hash === '#copy' || url.searchParams.has('copy')) {
 	copyUuidToClipboard().then(() => {
 		requestAnimationFrame(() => {
 			window.close()

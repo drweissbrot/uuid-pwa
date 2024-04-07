@@ -5,7 +5,7 @@ Generate UUIDs using your browser's built-in crypto library.
 This project is live on https://uuid.brot.phd (and https://guid.brot.phd if you're one of those people).
 It is deployed via Cloudflare Pages (because GitHub Pages doesn't allow multiple domains).
 
-You can also open https://copy-uuid.brot.phd (or https://copy-guid.brot.phd) to just copy a UUID to your clipboard and immediately close the tab.  
+You can also open https://copy.uuid.brot.phd (or https://copy.guid.brot.phd) to just copy a UUID to your clipboard and immediately close the tab.  
 Note that the first time you open one of these pages, you will need to allow the app access to your clipboard.
 
 
