@@ -1,0 +1,27 @@
+{
+	"name": "UUID",
+	"id": "/",
+	"start_url": "/",
+	"display": "fullscreen",
+	"description": "Generate a UUID",
+	"theme_color": "#7a02bf",
+	"background_color": "#212121",
+	"icons": [
+		{
+			"src": "/img/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/img/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/img/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

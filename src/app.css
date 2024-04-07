@@ -1,0 +1,86 @@
+html {
+	background: #212121;
+	color: #aeaeae;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin: 2rem;
+	min-height: 50vh;
+
+	font: 1rem/1.5 'Fira Code', 'Ubuntu Mono', Consolas, Cascade Mono, Monaco, 'Roboto Mono', monospace;
+	text-align: center;
+}
+
+#uuid {
+	padding: 1rem;
+	cursor: copy;
+	font-size: 2.5rem;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+button {
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+
+	background: none;
+	border: 1px solid #aeaeae;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+button:active {
+	transform: scale(0.975);
+}
+
+button:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+#copied-to-clipboard {
+	margin: 2rem;
+	transition: opacity 0.2s ease;
+}
+
+#copied-to-clipboard.--active {
+	animation: copied-to-clipboard 1s ease;
+}
+
+#copied-to-clipboard:not(.--active) {
+	pointer-events: none;
+	user-select: none;
+	opacity: 0;
+}
+
+@keyframes copied-to-clipboard {
+	from {
+		color: inherit;
+	}
+
+	20% {
+		color: #30d030;
+	}
+}
+
+a.github {
+	margin: 2rem;
+	color: inherit;
+	transition: text-decoration-color 0.2s ease;
+	font-size: 0.75rem;
+}
+
+a.github:active,
+a.github:hover {
+	text-decoration-color: #aeaeae00;
+}

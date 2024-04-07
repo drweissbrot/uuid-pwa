@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UUID</title>
+
+	<link rel="stylesheet" href="/app.css">
+	<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#7a02bf">
+	<link rel="canonical" href="https://uuid.brot.phd">
+	<meta name="description" content="Generate UUIDs straight in your browser.">
+</head>
+<body>
+	<div>
+		here's your uuid:
+		<div id="uuid" role="button" aria-label="Copy UUID"></div>
+	</div>
+
+	<div class="buttons">
+		<button id="copy">copy</button>
+		<button id="regenerate">another one</button>
+		<button id="regenerate-and-copy">copy another one</button>
+	</div>
+
+	<div id="copied-to-clipboard" aria-hidden>
+		copied to clipboard
+	</div>
+
+	<div id="sw-installed">
+		not yet available offline
+	</div>
+
+	<a href="https://github.com/drweissbrot/uuid-pwa" target="_blank" class="github">
+		GitHub
+	</a>
+
+	<script src="/app.js"></script>
+</body>
+</html>
